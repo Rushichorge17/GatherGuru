@@ -14,6 +14,7 @@ import { useState } from "react"
 import Image from "next/image"
 import DatePicker from "react-datepicker";
 import { useUploadThing } from '@/lib/uploadthing'
+
 import "react-datepicker/dist/react-datepicker.css";
 import { Checkbox } from "../ui/checkbox"
 import { useRouter } from "next/navigation"
@@ -99,7 +100,6 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
       }
     }
   }
-
 
   return (
     <Form {...form}>
@@ -260,10 +260,10 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                   <FormControl>
                     <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-grey-50 px-4 py-2">
                       <Image
-                        src="/assets/icons/Rupee.svg"
+                        src="/assets/icons/dollar.svg"
                         alt="dollar"
-                        width={12}
-                        height={12}
+                        width={24}
+                        height={24}
                         className="filter-grey"
                       />
                       <Input type="number" placeholder="Price" {...field} className="p-regular-16 border-0 bg-grey-50 outline-offset-0 focus:border-0 focus-visible:ring-0 focus-visible:ring-offset-0" />
