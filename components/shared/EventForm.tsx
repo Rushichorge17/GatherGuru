@@ -10,6 +10,7 @@ import * as z from 'zod'
 import { eventDefaultValues } from "@/constants"
 import Dropdown from "./Dropdown"
 import { Textarea } from "@/components/ui/textarea"
+import { FileUploader } from "./FileUploader "
 import { useState } from "react"
 import Image from "next/image"
 import DatePicker from "react-datepicker";
@@ -20,7 +21,6 @@ import { Checkbox } from "../ui/checkbox"
 import { useRouter } from "next/navigation"
 import { createEvent, updateEvent } from "@/lib/actions/event.actions"
 import { IEvent } from "@/lib/database/models/event.model"
-import { FileUploader } from "./FileUploader "
 
 
 type EventFormProps = {
